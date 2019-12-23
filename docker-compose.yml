@@ -39,8 +39,8 @@ services:
       - '8080:80'
     volumes: 
       - /sessions
-  redis:
-    container_name: 'sc-redis'
-    image: redis:latest
-    ports:
-      - "6379:6379"
+  # redis:
+  #   container_name: 'sc-redis'
+  #   image: redis:latest
+  #   ports:
+  #     - "6379:6379"
