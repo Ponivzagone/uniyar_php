@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=EDGE">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> &repTITLE. </title>
+
+    <link rel="stylesheet" type="text/css" href="./assets/css/datatables.min.css"/>
+    <link rel="stylesheet" type="text/css" href="./assets/css/datapicker.css"/>
+    
+    <!-- Bootstrap -->
+    <link rel="stylesheet" type="text/css" href="./assets/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/op_ind.css">
+    
+
+    <script charset="utf-8" src="./assets/js/polyfill.js"></script>
+    <!--[if lt IE 9]>
+      <script src="./assets/js/html5shiv.js"></script>
+      <script src="./assets/js/respond.js"></script>
+    <![endif]-->
+
+
+    <style>
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+th.glyphicon {
+  display: table-cell;
+}
+td.glyphicon {
+  display: table-cell;
+}
+
+body {
+  margin-bottom: 40px;
+}
+
+#footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 40px;
+  padding: 9px 0;
+  color: #999;
+  text-align: center;
+  background-color: #f9f9f9;
+  border-top: 1px solid #e5e5e5;
+}
+
+    </style>
+
+  </head>
+  <body>
+    
+    <div class="container-fluid" id="contianer">
+
+      <div style="height:75px"></div>
+      <table id="report" class="table table-striped table-bordered table-hover"></table>
+
+    </div>
+
+    <footer id="footer" class="footer">
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="row">
+                </div>
+            </div>
+        </div>
+    </footer><!--/Footer-->
+
+    <!-- InsertModal -->
+    <div class="modal fade" id="InsertModal" tabindex="-1" role="dialog" aria-labelledby="InsertModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-md ">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            <h4 class="modal-title" id="myModalLabel">Добавление</h4>
+          </div>
+          <div class="modal-body">
+              <div id="modal-content">
+              </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
+              <button id="AcceptInsert" type="button" class="btn btn-primary"   data-dismiss="modal">Добавить</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- / InsertModal -->
+
+
+
+    <script charset="utf-8" type="text/javascript" src=" ./assets/js/jquery-1.12.4.js"></script>
+    <script charset="utf-8" type="text/javascript" src=" ./assets/js/DataTables/jszip.js"></script>
+    <script charset="utf-8" type="text/javascript" src=" ./assets/js/DataTables/datatables.js"></script>
+    <script charset="utf-8" type="text/javascript" src=" ./assets/js/DataTables/input.js"></script>
+    <script charset="utf-8" type="text/javascript" src=" ./assets/js/DataPicker/DataPicker.js"></script>
+    <script charset="utf-8" type="text/javascript" src=" ./assets/js/jquery-placeholder.js"></script>
+    <script charset="utf-8" type="text/javascript" src=" ./assets/js/bootstrap.js"></script>
+    <script charset="utf-8" type="text/javascript" src=" ./assets/js/index.js"></script>
+
+  </body>
+</html>

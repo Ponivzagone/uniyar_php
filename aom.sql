@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Хост: mysql:3306
--- Время создания: Дек 23 2019 г., 17:56
+-- Время создания: Дек 24 2019 г., 22:29
 -- Версия сервера: 5.7.28
 -- Версия PHP: 7.4.1
 
@@ -29,7 +29,11 @@ USE `AOM`;
 --
 -- Структура таблицы `PASSENGERS`
 --
+-- Создание: Дек 24 2019 г., 22:26
+-- Последнее обновление: Дек 24 2019 г., 22:27
+--
 
+DROP TABLE IF EXISTS `PASSENGERS`;
 CREATE TABLE `PASSENGERS` (
   `TRAIN_NUM` int(11) NOT NULL,
   `FIRST` varchar(50) COLLATE utf8_unicode_ci NOT NULL,
@@ -44,7 +48,10 @@ CREATE TABLE `PASSENGERS` (
 --
 -- Структура таблицы `ROUTELIST`
 --
+-- Создание: Дек 24 2019 г., 22:28
+--
 
+DROP TABLE IF EXISTS `ROUTELIST`;
 CREATE TABLE `ROUTELIST` (
   `NAME` varchar(50) COLLATE utf8_unicode_ci NOT NULL,
   `ID` int(11) NOT NULL
@@ -55,7 +62,11 @@ CREATE TABLE `ROUTELIST` (
 --
 -- Структура таблицы `TRAINLIST`
 --
+-- Создание: Дек 24 2019 г., 22:26
+-- Последнее обновление: Дек 24 2019 г., 22:27
+--
 
+DROP TABLE IF EXISTS `TRAINLIST`;
 CREATE TABLE `TRAINLIST` (
   `NUM` int(11) NOT NULL,
   `TYPE` varchar(50) COLLATE utf8_unicode_ci NOT NULL,
@@ -80,14 +91,14 @@ ALTER TABLE `PASSENGERS`
 -- Индексы таблицы `ROUTELIST`
 --
 ALTER TABLE `ROUTELIST`
-  ADD PRIMARY KEY (`ID`);
+  ADD KEY `ID` (`ID`);
 
 --
 -- Индексы таблицы `TRAINLIST`
 --
 ALTER TABLE `TRAINLIST`
-  ADD PRIMARY KEY (`NUM`),
-  ADD UNIQUE KEY `ID_ROUTE` (`ID_ROUTE`);
+  ADD KEY `NUM` (`NUM`),
+  ADD KEY `ID_ROUTE` (`ID_ROUTE`);
 
 --
 -- Ограничения внешнего ключа сохраненных таблиц
